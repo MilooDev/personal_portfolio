@@ -67,15 +67,15 @@ main { flex: 1; }
 .section-title { font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-bottom: 20px; margin-left: 10px; }
 .bio-text { font-size: 1.05rem; line-height: 1.8; color: #334155; margin-bottom: 20px; }
 .bio-text:last-child { margin-bottom: 0; }
-.tech-category { display: flex; justify-content: space-between; align-items: center; font-size: 1.1rem; color: #64748b; margin-bottom: 12px; font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.tech-category { display: flex; align-items: center; font-size: 1.1rem; color: #64748b; margin-bottom: 15px; font-weight: 600; }
 
 /* =========================================
-   Métricas (Stats)
+   Capacidades (Stats)
    ========================================= */
-.stats-container { display: flex; flex-wrap: wrap; gap: 30px; margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.05); }
-.stat-box { display: flex; flex-direction: column; flex: 1; min-width: 200px; }
-.stat-number { font-size: 1.4rem; font-weight: 800; color: #0f172a; line-height: 1.2; margin-bottom: 5px; }
-.stat-label { font-size: 0.85rem; color: #475569; font-weight: 500; }
+.stats-container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; }
+.stat-box { display: flex; flex-direction: column; flex: 1; min-width: 200px; background: rgba(255, 255, 255, 0.4); padding: 20px; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.8); box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+.stat-number { font-size: 1.25rem; font-weight: 800; color: #0f172a; line-height: 1.2; margin-bottom: 5px; }
+.stat-label { font-size: 0.9rem; color: #475569; font-weight: 500; }
 
 /* =========================================
    Botones Universales
@@ -168,7 +168,7 @@ main { flex: 1; }
   #brand-name { top: 15vh; font-size: 2.8rem; }
   body.scrolled #brand-name { top: 22px; left: 20px; font-size: 1.3rem; transform: translateX(0); }
   
-  .stats-container { flex-direction: column; gap: 20px; text-align: center; }
+  .stats-container { flex-direction: column; gap: 15px; text-align: center; }
   .footer-content { flex-direction: column; text-align: center; justify-content: center; }
 
   .menu-toggle { display: flex; }
