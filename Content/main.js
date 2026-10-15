@@ -1,14 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
-  let isScrolled = window.scrollY > 40;
-  body.classList.toggle("scrolled", isScrolled);
-  window.addEventListener("scroll", () => {
-    const nextIsScrolled = window.scrollY > 40;
-    if (nextIsScrolled !== isScrolled) {
-      isScrolled = nextIsScrolled;
-      body.classList.toggle("scrolled", isScrolled);
-    }
-  }, { passive: true });
+  const scrollSentinel = document.querySelector(".scroll-sentinel");
+  const scrollObserver = new IntersectionObserver(([entry]) => {
+    body.classList.toggle("scrolled", !entry.isIntersecting);
+  });
+  scrollObserver.observe(scrollSentinel);
 
   const menuToggle = document.getElementById('mobile-menu');
   const navLinks = document.querySelector('.nav-links');
