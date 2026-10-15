@@ -72,7 +72,14 @@ document.addEventListener("DOMContentLoaded", () => {
 function openModal(title, desc, imgSrc, linkUrl) {
   document.getElementById('modal-title').textContent = title;
   document.getElementById('modal-desc').textContent = desc;
-  document.getElementById('modal-img').src = imgSrc;
+  const modalImage = document.getElementById('modal-img');
+  if (imgSrc) {
+    modalImage.src = imgSrc;
+    modalImage.hidden = false;
+  } else {
+    modalImage.removeAttribute('src');
+    modalImage.hidden = true;
+  }
   
   const linkTag = document.getElementById('modal-link-btn');
   linkTag.href = linkUrl;

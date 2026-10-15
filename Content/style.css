@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
-
 html { scroll-behavior: smooth; scroll-padding-top: 100px; }
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
 body { background-color: #f1f5f9; color: #1e293b; overflow-x: hidden; min-height: 100vh; display: flex; flex-direction: column; width: 100%; }
@@ -99,9 +97,7 @@ main { flex: 1; }
 }
 .tech-btn { cursor: default; }
 .cert-btn { background-color: rgba(255, 255, 255, 0.9); border-color: #e2e8f0; }
-.btn-icon { margin-right: 8px; font-size: 1.1rem; color: #475569; transition: color 0.3s; }
 .btn:hover { border-color: rgba(255,255,255,1); transform: translateY(-2px); box-shadow: inset 0px 1px 2px rgba(255,255,255,1), 0px 8px 15px rgba(0,0,0,0.08); background: rgba(255,255,255,0.9); }
-.btn:hover .btn-icon { color: #3b82f6; }
 
 /* =========================================
    TARJETAS GLASSMORPHISM CON IMAGEN
@@ -115,6 +111,7 @@ main { flex: 1; }
 .design-card:hover { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
 .card-curve-header { height: 180px; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #cbd5e1; }
 .header-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+.project-placeholder { position: absolute; inset: 0; display: grid; place-items: center; color: #475569; font-weight: 600; }
 .wave { position: absolute; bottom: -1px; left: 0; width: 100%; height: auto; z-index: 2; }
 .card-body { padding: 20px 25px 30px 25px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 15px; flex-grow: 1; z-index: 3; }
 .card-body h3 { font-size: 1.25rem; color: #0f172a; }
